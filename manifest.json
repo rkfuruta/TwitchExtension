@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitch Helper",
+  "description": "This extension automates same twitch actions",
+  "version": "1.0",
+
+   "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Twitch Helper"
+  },
+
+  "icons": { "16": "images/twitch16.png",
+           "48": "images/twitch48.png",
+          "128": "images/twitch128.png" 
+  },
+
+   "content_scripts" : [{
+        "matches" : ["https://www.twitch.tv/*"],
+        "js" : ["js/jquery.js","js/actions.js"]
+    }],
+
+  "permissions": [
+    "activeTab"
+  ]
+}

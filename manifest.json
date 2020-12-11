@@ -15,12 +15,8 @@
           "128": "images/twitch128.png" 
   },
 
-   "content_scripts" : [{
-        "matches" : ["https://www.twitch.tv/*"],
-        "js" : ["js/jquery.js","js/actions.js"]
-    }],
-
-  "permissions": [
-    "activeTab"
-  ]
+ "content_scripts" : [{
+      "matches" : ["https://www.twitch.tv/*"],
+      "js" : ["js/jquery.js","js/actions.js"]
+  }]
 }

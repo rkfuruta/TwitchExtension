@@ -5,5 +5,5 @@ jQuery(function() {
 			console.log("Twitch Helper Click Loot " + new Date().toLocaleString());
 			jQuery(definer).click();
 		}
-	}, 60000);
+	}, 10000);
 });
